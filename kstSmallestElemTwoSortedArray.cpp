@@ -1,6 +1,7 @@
 /*
   Given two sorted array of integers of size N and M.
   Find the k st smallest element of the union of these arrays.
+  Baidu Search Engine
 */
 
 #include <iostream>
