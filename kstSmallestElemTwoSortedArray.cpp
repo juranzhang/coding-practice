@@ -8,12 +8,12 @@ using namespace std;
 
 class Solution{
   public:
-    int solution(int[] a, int [] b,int k){
+    int solution(int[] N, int [] M,int k){
       int i = k/2;
       int j = k - i;
       int step = k/4;
       while (step > 0){
-        if (a[i-1] > b[j-1]){
+        if (N[i-1] > M[j-1]){
           i -= step;
           j += step;
         }
@@ -24,11 +24,11 @@ class Solution{
         step /= 2;
       }
 
-      if (a[i-1] > b[j-1]){
-        return a[i-1];
+      if (N[i-1] > M[j-1]){
+        return N[i-1];
       }
       else{
-        return b[j-1];
+        return M[j-1];
       }
 
     }
